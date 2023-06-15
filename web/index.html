@@ -31,6 +31,29 @@
 
   <title>pfe_app</title>
   <link rel="manifest" href="manifest.json">
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBwmy01aoSk0XbGfYAcFy6NI3rfgH19ZyY",
+  authDomain: "pfeapp-bc690.firebaseapp.com",
+  projectId: "pfeapp-bc690",
+  storageBucket: "pfeapp-bc690.appspot.com",
+  messagingSenderId: "823042910835",
+  appId: "1:823042910835:web:18aa334edc6c73e486d806",
+  measurementId: "G-MJKJHZT2N3"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+  </script>
 
   <script>
     // The value below is injected by flutter build, do not touch.
